@@ -1,0 +1,36 @@
+代码架构
+	页面相关的代码在app文件夹下
+	文件创建核心代码在lib/generator.js
+	任务构建核心代码在lib/child.js
+
+app目录说明
+	bower：第三方脚本库存放，基于bower，用grunt bower指令生成
+	js：页面js代码。基于angular
+	resources:	基于src目录构建生成，脚本端直接引用即可
+	src：	界面模块源代码
+	views：	页面模板文件夹
+	index.html：	启动页面，在项目根目录的package.json中配置
+
+
+gruntBuildFolder目录说明
+	存放grunt构建任务必须的模块，构建开始时执行路径会指到这里，起到隔离的作用，防止构建任务可能动态生成的一些文件对程序的源代码和文件夹造成污染
+
+
+Gruntfile_module.js、Gruntfile_project.js
+	gruntfile的模板文件，构建任务时，根据项目的具体类型选择模板生成对应的gruntfile
+
+项目列表的存储
+	基于第三方库nedb，代码在lib/db.js，用法在github搜索此项目
+
+
+后期可优化点
+	1、http化
+		平台的部分功能后面可能会抽取出来搭建一个web服务器，比如图片合并功能。http化能代码复用
+	2、angular到backbone的迁移
+		考虑到组内的一致性，使用backbone+seajs会好些。但是迁移有一些问题要解决：项目设置页面里的表单验证（angular的强项），seajs和node-webkit的require关键字的冲突
+
+
+
+
+
+

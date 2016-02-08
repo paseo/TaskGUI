@@ -1,0 +1,32 @@
+{
+    "coffee": {
+        "src": "coffee",
+        "dest": ".build/_js",
+        "bare": true
+    },
+    "cmd": {
+        "src": "js",
+        "dest": ".build/_cmd_js"
+    },
+    "transport": {
+        "dest": ".build/_transport_js",
+        "deploy": "modules"
+    },
+    "concat": {
+        "cmd": {
+            "dest": ".build/.js",
+            "include": "relative"
+        }
+    },
+    "uglify": {
+        "dest": ".build/js",
+        "mangle": true
+    },
+    "copy": {
+        "src": "",
+        "dest": "../../modules"
+    },
+    "clean": {
+        "src": ".build"
+    }
+}

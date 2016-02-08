@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title></title>
+    <link rel="stylesheet" href="../resources/css/ui.css"/>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-logo">
+        <i class="icon-logo"></i>
+        UI开发平台
+    </div>
+    <div class="header-control">
+        <ul>
+            <li><a href="#"><i class="icon-control icon-minimize"></i></a></li>
+            <li><a href="#"><i class="icon-control icon-maximize"></i></a></li>
+            <li><a href="#"><i class="icon-control icon-restore"></i></a></li>
+            <li class="close"><a href="#"><i class="icon-control icon-close"></i></a></li>
+        </ul>
+    </div>
+</header>
+<!--header-->
+
+<section class="container">
+
+    <div class="panel panel-default tab-default">
+        <div class="panel-hd tab-toggle">
+            <ul>
+                <li>
+                    <h3>全局设置</h3>
+                </li>
+            </ul>
+        </div>
+        <div class="panel-bd tab-main">
+
+            <form class="grid-form grid-form-v grid-form-v-lg" action="" method="">
+
+                <div class="row">
+                    <label class="span span-label" for="">
+                        <span class="required">*</span>
+                        职务：
+                    </label>
+                    <div class="span span-full">
+
+                        <label class="radio help-inline" for="zw1">
+                            <input type="radio" id="zw1" name="zw" checked="checked"/>
+                            <i class="radio-icon"></i>
+                            前端界面开发工程师
+                        </label>
+                        <label class="radio help-inline ml20" for="zw2">
+                            <input type="radio" id="zw2" name="zw"/>
+                            <i class="radio-icon"></i>
+                            前端交互开发工程师
+                        </label>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label class="span span-label" for="">
+                        <span class="required">*</span>
+                        姓名：
+                    </label>
+                    <div class="span span-full">
+                        <input class="input input-default" type="text"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label class="span span-label" for="">
+                        <span class="required">*</span>
+                        邮箱：
+                    </label>
+                    <div class="span span-full">
+                        <input class="input input-default" type="text"/>
+                    </div>
+                </div>
+
+                <div class="row form-actions">
+                    <div class="span span-full">
+                        <button class="btn btn-default" type="submit">保存</button>
+                        <button class="btn btn-default btn-gray" type="button">取消</button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    <!-- 全局设置 -->
+
+</section>
+<!--container-->
+
+</body>
+</html>

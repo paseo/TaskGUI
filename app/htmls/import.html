@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title></title>
+    <link rel="stylesheet" href="../resources/css/ui.css"/>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-logo">
+        <i class="icon-logo"></i>
+        UI开发平台
+    </div>
+    <div class="header-control">
+        <ul>
+            <li><a href="#"><i class="icon-control icon-minimize"></i></a></li>
+            <li><a href="#"><i class="icon-control icon-maximize"></i></a></li>
+            <li><a href="#"><i class="icon-control icon-restore"></i></a></li>
+            <li class="close"><a href="#"><i class="icon-control icon-close"></i></a></li>
+        </ul>
+    </div>
+</header>
+<!--header-->
+
+<section class="container">
+
+    <div class="panel panel-default tab-default">
+        <div class="panel-hd tab-toggle">
+            <ul>
+                <li>
+                    <h3>导入组件</h3>
+                </li>
+            </ul>
+        </div>
+        <div class="panel-bd tab-main">
+
+            <form class="grid-form grid-form-v grid-form-v-lg" action="" method="">
+
+                <div class="row">
+                    <label class="span span-label" for="">
+                        <span class="required">*</span>
+                        导入模式：
+                    </label>
+                    <div class="span span-full">
+
+                        <label class="radio help-inline" for="zw1">
+                            <input type="radio" id="zw1" name="zw" checked="checked"/>
+                            <i class="radio-icon"></i>
+                            批量导入
+                        </label>
+                        <label class="radio help-inline ml20" for="zw2">
+                            <input type="radio" id="zw2" name="zw"/>
+                            <i class="radio-icon"></i>
+                            自定义导入
+                        </label>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label class="span span-label" for="">
+                        <span class="required">*</span>
+                        目录：
+                    </label>
+                    <div class="span span-full">
+                        <input class="input input-default" type="text"/>
+                        <button class="btn btn-default" type="button">确定</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="span span-full">
+
+                        <div class="list-group">
+                            <ul class="list list-beautify list-group-header">
+                                <li>
+                                    <label class="checkbox" for="0">
+                                        <input type="checkbox" id="0"/>
+                                        <i class="checkbox-icon"></i>
+                                        <span class="checkbox-content">全部导入</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <ul class="list list-beautify list-group-container">
+                                <li>
+                                    <label class="checkbox" for="1">
+                                        <input type="checkbox" id="1"/>
+                                        <i class="checkbox-icon"></i>
+                                        <span class="checkbox-content">btn</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox" for="2">
+                                        <input type="checkbox" id="2"/>
+                                        <i class="checkbox-icon"></i>
+                                        <span class="checkbox-content">btn</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox" for="3">
+                                        <input type="checkbox" id="3"/>
+                                        <i class="checkbox-icon"></i>
+                                        <span class="checkbox-content">btn</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row form-actions">
+                    <div class="span span-full">
+                        <button class="btn btn-default" type="submit">保存</button>
+                        <button class="btn btn-default btn-gray" type="button">取消</button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    <!-- 全局设置 -->
+
+</section>
+<!--container-->
+
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../resources/css/ui.css"/>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-logo">
+        <i class="icon icon-logo"></i>
+        UI开发平台
+    </div>
+    <div class="header-control">
+        <ul>
+            <li><a href="#"><i class="icon icon-about"></i></a></li>
+            <li><a href="#"><i class="icon icon-minimize"></i></a></li>
+            <li><a href="#"><i class="icon icon-maximize"></i></a></li>
+            <li><a href="#"><i class="icon icon-restore"></i></a></li>
+            <li class="close"><a href="#"><i class="icon icon-close"></i></a></li>
+        </ul>
+    </div>
+</header>
+<!--header-->
+
+<section class="container">
+
+    <div class="tab tab-default panel-default">
+        <div class="tab-toggle panel-hd">
+            <ul>
+                <li class="active"><a href="#">图片合成</a></li>
+                <li><a href="#">LESS编译</a></li>
+                <li><a href="#">CSS合并</a></li>
+                <li><a href="#">项目调试</a></li>
+                <li><a href="#">项目部署</a></li>
+                <li><a href="#">项目导出</a></li>
+            </ul>
+        </div>
+        <div class="tab-main panel-bd">
+
+            <div class="tab-content active">
+
+                <form class="grid-form grid-form-v grid-form-v-lg" action="" method="">
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            输入目录：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            输出目录：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            变量文件输出目录：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            图片地址目录：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            合成算法：
+                        </label>
+                        <div class="span span-full">
+                            <div class="hint-group">
+                                <label class="radio" for="a1" title="">
+                                    <i class="icon-algorithm icon-binary-tree"></i>
+                                    <input type="radio" name="algorithm" id="a1" checked="checked"/>
+                                    <i class="radio-icon"></i>
+                                </label>
+                                <label class="radio" for="a2" title="">
+                                    <i class="icon-algorithm icon-top-down"></i>
+                                    <input type="radio" name="algorithm" id="a2"/>
+                                    <i class="radio-icon"></i>
+                                </label>
+                                <label class="radio" for="a3" title="">
+                                    <i class="icon-algorithm icon-left-right"></i>
+                                    <input type="radio" name="algorithm" id="a3"/>
+                                    <i class="radio-icon"></i>
+                                </label>
+                                <label class="radio" for="a4" title="">
+                                    <i class="icon-algorithm icon-diagonal"></i>
+                                    <input type="radio" name="algorithm" id="a4"/>
+                                    <i class="radio-icon"></i>
+                                </label>
+                                <label class="radio" for="a5" title="">
+                                    <i class="icon-algorithm icon-alt-diagonal"></i>
+                                    <input type="radio" name="algorithm" id="a5"/>
+                                    <i class="radio-icon"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            按算法排序：
+                        </label>
+                        <div class="span span-full">
+                            <div class="switch">
+                                <input type="radio" name="algorithmSort" id="on" checked="checked">
+                                <label for="on">ON</label>
+                                <input type="radio" name="algorithmSort" id="off">
+                                <label for="off">OFF</label>
+                                <span class="switch-bar"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            合成间距：
+                        </label>
+                        <div class="span span-full">
+                            <div class="input-group">
+                                <input class="input input-default" type="number" name="padding">
+                                <span class="input-group-label">px</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            Retina图输入目录：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row form-actions">
+                        <div class="span span-full">
+                            <button class="btn btn-default" type="submit">保存</button>
+                            <button class="btn btn-default btn-gray" type="button">取消</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="tab-content">
+
+                <form class="grid-form grid-form-v grid-form-v-lg" action="" method="">
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            输入目录：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            输出目录：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            cosyless输入目录：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            cosyless输出目录：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            cosyless变量文件：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default input-lg" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            雪碧变量文件：
+                        </label>
+                        <div class="span span-full">
+                            <div class="mb10">
+                                <input class="input input-default input-lg" type="text"/>
+                            </div>
+                            <div class="mb10">
+                                <input class="input input-default input-lg" type="text"/>
+                            </div>
+                            <div>
+                                <input class="input input-default input-lg" type="text"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            浏览器兼容性：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            CSS压缩：
+                        </label>
+                        <div class="span span-full">
+                            <div class="switch">
+                                <input type="radio" name="algorithmSort" id="on" checked="checked">
+                                <label for="on">ON</label>
+                                <input type="radio" name="algorithmSort" id="off">
+                                <label for="off">OFF</label>
+                                <span class="switch-bar"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            修复代码保留：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default input-smt" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row form-actions">
+                        <div class="span span-full">
+                            <button class="btn btn-default" type="submit">保存</button>
+                            <button class="btn btn-default btn-gray" type="button">取消</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="tab-content">
+
+                <form class="grid-form grid-form-v grid-form-v-lg" action="" method="">
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            输入目录：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            输出目录：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row form-actions">
+                        <div class="span span-full">
+                            <button class="btn btn-default" type="submit">保存</button>
+                            <button class="btn btn-default btn-gray" type="button">取消</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="tab-content">
+
+                <form class="grid-form grid-form-v grid-form-v-lg" action="" method="">
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            调试端口号：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            自动打开浏览器：
+                        </label>
+                        <div class="span span-full">
+                            <div class="switch">
+                                <input type="radio" name="open" id="on" checked="checked">
+                                <label for="on">ON</label>
+                                <input type="radio" name="open" id="off">
+                                <label for="off">OFF</label>
+                                <span class="switch-bar"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            Watch 目录：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            启用 livereload：
+                        </label>
+                        <div class="span span-full">
+                            <div class="switch">
+                                <input type="radio" name="livereload" id="on" checked="checked">
+                                <label for="on">ON</label>
+                                <input type="radio" name="livereload" id="off">
+                                <label for="off">OFF</label>
+                                <span class="switch-bar"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row form-actions">
+                        <div class="span span-full">
+                            <button class="btn btn-default" type="submit">保存</button>
+                            <button class="btn btn-default btn-gray" type="button">取消</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="tab-content">
+
+                <form class="grid-form grid-form-v grid-form-v-lg" action="" method="">
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            输入目录：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            输出目录：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row form-actions">
+                        <div class="span span-full">
+                            <button class="btn btn-default" type="submit">保存</button>
+                            <button class="btn btn-default btn-gray" type="button">取消</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="tab-content">
+
+                <form class="grid-form grid-form-v grid-form-v-lg" action="" method="">
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            输入目录：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="span span-label" for="">
+                            输出目录：
+                        </label>
+                        <div class="span span-full">
+                            <input class="input input-default" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="row form-actions">
+                        <div class="span span-full">
+                            <button class="btn btn-default" type="submit">保存</button>
+                            <button class="btn btn-default btn-gray" type="button">取消</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- 组件信息 -->
+
+</section>
+<!--container-->
+
+</body>
+</html>

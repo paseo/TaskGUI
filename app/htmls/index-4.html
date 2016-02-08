@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../resources/css/ui.css"/>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-logo">
+        <i class="icon icon-logo"></i>
+        UI开发平台
+    </div>
+    <div class="header-control">
+        <ul>
+            <li><a href="#"><i class="icon icon-about"></i></a></li>
+            <li><a href="#"><i class="icon icon-minimize"></i></a></li>
+            <li><a href="#"><i class="icon icon-maximize"></i></a></li>
+            <li><a href="#"><i class="icon icon-restore"></i></a></li>
+            <li class="close"><a href="#"><i class="icon icon-close"></i></a></li>
+        </ul>
+    </div>
+</header>
+<!--header-->
+
+<section class="container">
+    <div class="sidebar">
+        <div class="listing-project">
+            <div class="listing-wrap">
+
+                <ul class="list list-project">
+                    <li class="active"><a href="javascript:;">项目名称</a></li>
+                    <li><a href="javascript:;">项目名称</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="sidebar-add">
+            <a href="#">
+                <i class="icon icon-add"></i>
+                <span>添加项目</span>
+            </a>
+            <input class="help-hidden" type="file"/>
+        </div>
+    </div>
+    <!--sidebar-->
+    <div class="main">
+        <div class="listing-component">
+            <div class="listing-wrap">
+
+                <div class="menu menu-context">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="icon-menu icon-open"></i>
+                                <span>打开项目目录</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-menu icon-edit"></i>
+                                <span>编辑项目信息</span>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-menu icon-refresh"></i>
+                                <span>刷新组件列表</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-menu icon-export"></i>
+                                <span>导出构建文件</span>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-menu icon-debug"></i>
+                                <span>项目调试</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-menu icon-setting"></i>
+                                <span>项目设置</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-menu icon-zip"></i>
+                                <span>导出项目</span>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-menu icon-remove"></i>
+                                <span>移除项目</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu menu-context">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="icon-menu icon-open"></i>
+                                <span>打开组件目录</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-menu icon-edit"></i>
+                                <span>编辑组件信息</span>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-menu icon-remove"></i>
+                                <span>移除组件</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="list list-component help-hidden">
+                    <li class="active">
+                        <div class="list-icon">
+                            <i class="icon-hint icon-hint-default"></i>
+                            <label class="checkbox" for="c1">
+                                <input type="checkbox" name="c" id="c1" checked="checkbox"/>
+                                <i class="checkbox-icon"></i>
+                            </label>
+                        </div>
+                        <div class="list-main">
+                            <div class="list-caption">
+                                <h3>组件名称</h3>
+                                <span>（1.0.0）</span>
+                            </div>
+                            <p class="list-description">组件描述...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-icon">
+                            <i class="icon-hint icon-hint-default"></i>
+                            <label class="checkbox" for="c2">
+                                <input type="checkbox" name="c" id="c2"/>
+                                <i class="checkbox-icon"></i>
+                            </label>
+                        </div>
+                        <div class="list-main">
+                            <div class="list-caption">
+                                <h3>btn</h3>
+                                <span>（1.0.0）</span>
+                            </div>
+                            <p class="list-description">按钮</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="placeholder help-hidden">
+                    <i class="icon icon-import"></i>
+                    <span class="placeholder-text">将文件夹拖到此处添加项目</span>
+                </div>
+
+                <div class="placeholder help-hidden">
+                    <i class="icon icon-empty"></i>
+                    <span class="placeholder-text">组件列表为空，请创建或导入组件</span>
+                </div>
+
+                <div class="notice notice-info help-hidden">
+                    <div class="notice-icon"></div>
+                    <div class="notice-main">info</div>
+                </div>
+
+                <div class="notice notice-warning help-hidden">
+                    <div class="notice-icon"></div>
+                    <div class="notice-main">warning</div>
+                </div>
+
+                <div class="notice notice-error help-hidden">
+                    <div class="notice-icon"></div>
+                    <div class="notice-main">error</div>
+                </div>
+
+                <div class="notice notice-success help-hidden">
+                    <div class="notice-icon"></div>
+                    <div class="notice-main">success</div>
+                </div>
+
+                <div class="notice notice-loading help-hidden">
+                    <div class="notice-icon"></div>
+                    <div class="notice-main">loading</div>
+                </div>
+
+            </div>
+            <div class="component-detail">
+                <div class="tab tab-default">
+                    <div class="tab-toggle">
+                        <ul>
+                            <li class="active"><a href="#">CSS</a></li>
+                            <li><a href="#">IMAGES</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-main">
+                        <div class="tab-content active">
+                            <ul class="list list-beautify">
+                                <li>
+                                    <label class="checkbox" for="c3">
+                                        <input type="checkbox" name="c" id="c3" checked="checked"/>
+                                        <i class="checkbox-icon"></i>
+                                        组件名.less
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox" for="c3">
+                                        <input type="checkbox" name="c" id="c3" checked="checked"/>
+                                        <i class="checkbox-icon"></i>
+                                        组件名-主题名.less
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox" for="c3">
+                                        <input type="checkbox" name="c" id="c3" checked="checked"/>
+                                        <i class="checkbox-icon"></i>
+                                        组件名-主题名-皮肤名.less
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox" for="c3">
+                                        <input type="checkbox" name="c" id="c3" checked="checked"/>
+                                        <i class="checkbox-icon"></i>
+                                        组件名-形态名.less
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox" for="c3">
+                                        <input type="checkbox" name="c" id="c3" checked="checked"/>
+                                        <i class="checkbox-icon"></i>
+                                        组件名-形态名-皮肤名.less
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox" for="c3">
+                                        <input type="checkbox" name="c" id="c3" checked="checked"/>
+                                        <i class="checkbox-icon"></i>
+                                        组件名-大小.less
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+
+                            <div class="placeholder placeholder-sm">
+                                <i class="icon icon-empty"></i>
+                                <span class="placeholder-text">无内容</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="toolbar clearfix">
+            <div class="pull-left">
+                <form class="form-search active" action="">
+                    <input class="input" type="text" placeholder="搜索组件"/>
+                    <button class="btn" type="button">搜索</button>
+                </form>
+            </div>
+            <div class="pull-right">
+                <ul class="menu menu-main">
+                    <li><a href="#"><i class="icon-menu icon-create"></i><span>创建组件</span></a></li>
+                    <li><a href="#"><i class="icon-menu icon-import"></i><span>导入组件</span></a></li>
+                    <li><a href="#"><i class="icon-menu icon-build"></i><span>CSS构建</span></a></li>
+                    <li><a href="#"><i class="icon-menu icon-deploy"></i><span>项目部署</span></a></li>
+                    <li><a href="#"><i class="icon-menu icon-toolkit"></i><span>工具箱</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--main-->
+
+    <!-- 弹出层追加到这里！ -->
+
+    <div class="overlay overlay-log">
+        <pre class="overlay-main">
+File .build/_precss/notice_1_1_skin.css created.
+File .build/_precss/paging.css created.
+File .build/_precss/paging_1.css created.
+File .build/_precss/placeholder_1.css created.
+File .build/_precss/progress-update.css created.
+File .build/_precss/progress.css created.
+File .build/_precss/state-404.css created.
+File .build/_precss/state-500.css created.
+File .build/_precss/state.css created.
+File .build/_precss/table.css created.
+File .build/_precss/table_1.css created.
+File .build/_precss/tree_1.css created.
+File .build/_precss/upload_1.css created.
+File .build/_precss/z_layout_1.css created.
+File .build/_precss/z_layout_login_2.css created.
+
+Running "concat:css" (concat) task
+File dest/css/yunpan.css created.
+
+Running "cssmin:files" (cssmin) task
+File dest/css/yunpan.min.css created.
+
+Running "clean:build" (clean) task
+>> 2 paths cleaned.
+
+Running "copy:deploy" (copy) task
+Created 2 directories, copied 26 files
+
+Running "watch" task
+Waiting...
+        </pre>
+        <a class="overlay-close" href="#"><i class="icon icon-cancel"></i></a>
+    </div>
+
+</section>
+<!--container-->
+
+</body>
+</html>
