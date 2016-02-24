@@ -22,7 +22,11 @@ let appIcon;
 
 function createWindow() {
     // Create the browser window.
-    mainWindow = new BrowserWindow({width: 1024, height: 768});
+    mainWindow = new BrowserWindow({
+        width: 1024,
+        height: 768,
+        icon: 'app/resources/images/ui.png'
+    });
 
     // and load the index.html of the app.
     mainWindow.loadURL('file://' + __dirname + '/app/index.html');
@@ -38,6 +42,7 @@ function createWindow() {
         mainWindow = null;
     });
 
+    //this png is not available for tray
     appIcon = new Tray('app/resources/images/ui.png');
     var contextMenu = Menu.buildFromTemplate([
         { label: '退出', type: 'radio',click: function () {
@@ -68,3 +73,5 @@ app.on('activate', function () {
         createWindow();
     }
 });
+
+app.dock.setIcon('app/resources/images/ui.png');
