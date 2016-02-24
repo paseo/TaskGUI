@@ -5,8 +5,11 @@
     <title>UI开发平台</title>
     <link rel="stylesheet" href="./resources/css/ui.css"/>
     <script>
-        window.gui = require('nw.gui');
+        window.gui = require('electron').webFrame;
         window.requireNode = window.require;
+        delete window.exports;
+        delete window.module;
+
 
         // prevent default behavior from changing page on dropped file
         window.ondragover = function (e) {
@@ -21,7 +24,7 @@
         Object.defineProperty(window, 'gui', {
             configurable: true,
             get: function () {
-                return window.require('nw.gui');
+                return window.require('electron').webFrame;
             }
         });
     </script>
