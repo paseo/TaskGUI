@@ -11,12 +11,16 @@ const electron = require('electron');
 const app = electron.app;
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow;
+const Menu = electron.Menu;
+const Tray = electron.Tray;
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow;
+let appIcon;
 
-function createWindow () {
+
+function createWindow() {
     // Create the browser window.
     mainWindow = new BrowserWindow({width: 1024, height: 768});
 
@@ -24,15 +28,24 @@ function createWindow () {
     mainWindow.loadURL('file://' + __dirname + '/app/index.html');
 
     // Open the DevTools.
-    if(!production) mainWindow.webContents.openDevTools();
+    if (!production) mainWindow.webContents.openDevTools();
 
     // Emitted when the window is closed.
-    mainWindow.on('closed', function() {
+    mainWindow.on('closed', function () {
         // Dereference the window object, usually you would store windows
         // in an array if your app supports multi windows, this is the time
         // when you should delete the corresponding element.
         mainWindow = null;
     });
+
+    appIcon = new Tray('app/resources/images/ui.png');
+    var contextMenu = Menu.buildFromTemplate([
+        { label: '退出', type: 'radio',click: function () {
+            app.quit();
+        } }
+    ]);
+    appIcon.setToolTip('UI开发平台');
+    appIcon.setContextMenu(contextMenu);
 }
 
 // This method will be called when Electron has finished
