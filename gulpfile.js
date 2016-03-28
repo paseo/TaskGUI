@@ -1,3 +1,4 @@
+
 var gulp = require('gulp');
 
 gulp.task('nw', function () {
@@ -29,3 +30,4 @@ gulp.task('watch', function () {
     //gulp.watch('./app/js/**/*.js', ['concatjs']);
 });
 
+//todo 打包编译到dist
