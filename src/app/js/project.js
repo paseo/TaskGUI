@@ -3,11 +3,11 @@ define(function (require, exports, module) {
     require('layout');
     require('./core');
 
-    var _ = requireNode('underscore');
+    var _ = requireNode('lodash');
     angular.module('project', ['layout', 'core'])
         .service('projectService', function ($q, VirtualProject, Project, globalParams, fs,$secondView) {
             var w = this;
-            var _ = requireNode('underscore');
+            var _ = requireNode('lodash');
             var path = requireNode('path');
             var localDataFile = path.resolve('./.ui/localStorage.txt');
             var fileDelimiter = ";";

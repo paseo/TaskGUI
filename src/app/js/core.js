@@ -193,7 +193,7 @@ define(function (require, exports, module) {
     core.factory('Abstract', function ($q, Virtual, fs, output, $timeout) {
         "use strict";
 
-        var _ = requireNode('underscore');
+        var _ = requireNode('lodash');
         var child_process = requireNode('child_process');
 
         function Abstract(dir) {
